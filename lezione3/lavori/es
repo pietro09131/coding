@@ -1,0 +1,20 @@
+
+import random
+
+
+n = random.randint(1,100)
+win = False
+attemps = 0 
+
+while not win:
+    guess = int(input("Prova ad indovinare: "))
+    attemps = attemps + 1
+    if guess == n:
+        win = True
+        print("Bravo, hai indovinato!, ci hai messo", attemps, "tentetivi")
+    elif guess > n:
+        print("Troppo grande!")
+    else:
+        print("Troppo piccolo!")
+
+
